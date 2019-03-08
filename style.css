@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+
+header {
+  height: 44vh;
+  background-color: #505050;
+  color: white;
+  text-align: center;
+  padding-top: 5vh;
+  text-shadow: 0 0 10px black;
+}
+
+header h1 {
+  padding-top: 3vh;
+  font-size: 2.5em;
+}
+
+#circle-art {
+  width: 10vw;
+  height: 10vw;
+  position: relative;
+  left: 45vw;
+
+}
+
+.circle {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  box-shadow: 0 0 10px #505050;
+}
+
+#circle1 {
+  width: 20%;
+  height: 20%;
+  background: linear-gradient(to right, #E6E6FC, #E6E6FC 50%, #4949FC 50%); 
+  border-radius: 50%;
+  z-index: 5;
+}
+
+#circle2 {
+  width: 40%;
+  height: 40%;
+  background: linear-gradient(to right, #D2D2F6, #D2D2F6 50%, #1F1FFF 50%); 
+  border-radius: 50%;
+  z-index: 4;
+}
+
+#circle3 {
+  width: 60%;
+  height: 60%;
+  background: linear-gradient(to right, #BDBDEF, #BDBDEF 50%, #0000FF 50%); 
+  border-radius: 50%;
+  z-index: 3;
+}
+
+#circle4 {
+  width: 80%;
+  height: 80%;
+  background: linear-gradient(to right, #A6A6E5, #A6A6E5 50%, #0000C0 50%); 
+  border-radius: 50%;
+  z-index: 2;
+}
+
+#circle5 {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #9090D9, #9090D9 50%, #010195 50%); 
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: 0 0 10px black;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 6vh;
+    background-color: #505050;
+    color: white;
+}
+
+nav a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 1.15em;
+    float: right;
+    margin-right: 2vw;
+    text-shadow: 0 0 10px black;
+  }
+  
+nav a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transform: scalex(0);
+    transition: all 0.5s ease-in-out 0s;
+  }
+  
+nav a:hover:before {
+    visibility: visible;
+    transform: scalex(1);
+  }
+
+/* Sheet for index.html*/
+
+#home {
+    padding-top: 10vh;
+    text-align: center;
+    color: black;
+}
+
+#home h1 {
+    font-size: 3em;
+    margin-bottom: 3vh;
+}
+
+#home h2 {
+    font-size: 2em;
+    margin-bottom: 3vh;
+}
+
+#home p {
+    font-size: 1.5em;
+    margin-bottom: 3vh;
+    font-weight: 600;
+}
+
+#home a {
+    color: black;
+}
+
+#home a:hover {
+    color: blue;
+}
+
+/* portfolio.html */
+
+#portfolio h1 {
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 3em;
+}
+
+.tile {
+    display: inline-block;
+    width: 300px;
+    height: 170px;
+    overflow: hidden;
+    margin: 5vh 2.5vw;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.tile-pic {
+    width: 300px;
+    height: auto;
+}
+
+/* contact.html */
+
+#contact {
+    background-color: white;
+    color: black;
+    text-align: center;
+  }
+  
+  #contact h1 {
+    padding-top: 5vh;
+    font-size: 3em;
+    margin-bottom: 5vh;
+  }
+  
+  #contact a {
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    padding: 0.75em;
+    display: block;
+    width: 25vw;
+    margin: 3vh auto;
+    border-radius: 10px;
+  }
+  
+  #email {
+    background-color: #b23121;
+    transition: all 1s ease;
+  }
+  
+  #email:hover {
+    background-color: white;
+    color: #b23121;
+    font-weight: bold;
+  }
+
+  #linkedin {
+    background-color: #0077B5;
+    transition: all 1s ease;
+  }
+
+  #linkedin:hover {
+    background-color: white;
+    color: #0077B5;
+    font-weight: bold;
+  }
+  
+  #facebook {
+    background-color: #3b5998;
+    transition: all 1s ease;
+  }
+  
+  #facebook:hover {
+    background-color: white;
+    color: #3b5998;
+    font-weight: bold;
+  }
+  #github {
+    background-color: #333;
+    transition: all 1s ease;
+  }
+  
+  #github:hover {
+    background-color: white;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  #profile-link {
+    background-color: #006400;
+    transition: all 1s ease;
+  }
+  
+  #profile-link:hover {
+    background-color: white;
+    color: #006400;
+    font-weight: bold;
+  }
+  
+  #codepen {
+    background-color: black;
+    transition: all 1s ease;
+  }
+  
+  #codepen:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+  }
+
+/* for mobile */
+
+@media (max-width: 1000px) {
+  header h1 {
+    font-size: 4em;
+  }
+  header p {
+    font-size: 2em;
+  }
+  #circle-art {
+    width: 35vw;
+    height: 35vw;
+    left: 32.5vw;
+  }
+  nav {
+    justify-content: space-around;
+  }
+  #home h1 {
+    font-size: 3.5em;
+  }
+  #home h2 {
+    font-size: 3.5em;
+  }
+  #home p {
+    font-size: 3.5em;  
+  }
+  nav a {
+    font-size: 2em;
+  }
+  #portfolio h1 {
+    font-size: 4em;
+  }
+  #portfolio p {
+    font-size: 2.5em;
+  }
+  .tile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    height: 45vw;
+  }
+  .tile-pic {
+    width: 80vw;
+    height: auto;
+  }
+  #contact h1 {
+    font-size: 4em;
+    padding-top: 10vh;
+    margin-bottom: 5vh;
+  }
+  #contact a {
+    font-size: 3em;
+    width: 90vw;
+  }
+}
