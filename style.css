@@ -1,16 +1,16 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html, body {
-    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header {
   height: 44vh;
-  background-color: #505050;
+  background-color: indigo;
   color: white;
   text-align: center;
   padding-top: 5vh;
@@ -20,6 +20,7 @@ header {
 header h1 {
   padding-top: 3vh;
   font-size: 2.5em;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 #circle-art {
@@ -27,124 +28,105 @@ header h1 {
   height: 10vw;
   position: relative;
   left: 45vw;
-
 }
 
 .circle {
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
-  box-shadow: 0 0 10px #505050;
+  background: transparent;
+  border: 5px solid white;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent; 
+  border-radius: 50%;
+  text-shadow: 0 0 10px black;
 }
 
 #circle1 {
-  width: 20%;
-  height: 20%;
-  background: linear-gradient(to right, #E6E6FC, #E6E6FC 50%, #4949FC 50%); 
-  border-radius: 50%;
-  z-index: 5;
+  width: 100%;
+  height: 100%;
+  animation: rotate 2s .5 ease-in-out;
 }
 
 #circle2 {
-  width: 40%;
-  height: 40%;
-  background: linear-gradient(to right, #D2D2F6, #D2D2F6 50%, #1F1FFF 50%); 
-  border-radius: 50%;
-  z-index: 4;
+  width: 90%;
+  height: 90%;
+  transform: rotate(20deg);
+  animation: rotate2 1s 1 ease-in-out;
 }
 
 #circle3 {
-  width: 60%;
-  height: 60%;
-  background: linear-gradient(to right, #BDBDEF, #BDBDEF 50%, #0000FF 50%); 
-  border-radius: 50%;
-  z-index: 3;
-}
-
-#circle4 {
   width: 80%;
   height: 80%;
-  background: linear-gradient(to right, #A6A6E5, #A6A6E5 50%, #0000C0 50%); 
-  border-radius: 50%;
-  z-index: 2;
+  transform: rotate(40deg);
+  animation: rotate3 .5s 2 ease-in-out;
 }
 
-#circle5 {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, #9090D9, #9090D9 50%, #010195 50%); 
-  border-radius: 50%;
-  z-index: 1;
-  box-shadow: 0 0 10px black;
+@keyframes rotate {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+@keyframes rotate2 {
+  0% {transform: rotate(20deg);}
+  100% {transform: rotate(380deg)}
+}
+
+@keyframes rotate3 {
+  0% {transform: rotate(40deg)}
+  100% {transform: rotate(400deg)}
 }
 
 nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 6vh;
-    background-color: #505050;
-    color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 6vh;
+  background-color: indigo;
+  color: white;
 }
 
 nav a {
-    position: relative;
-    color: white;
-    text-decoration: none;
-    font-size: 1.15em;
-    float: right;
-    margin-right: 2vw;
-    text-shadow: 0 0 10px black;
-  }
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 1.15em;
+  float: right;
+  margin-right: 2vw;
+  text-shadow: 0 0 10px black;
+}
   
 nav a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: white;
-    visibility: hidden;
-    transform: scalex(0);
-    transition: all 0.5s ease-in-out 0s;
-  }
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  transform: scalex(0);
+  transition: all 0.5s ease-in-out 0s;
+}
   
 nav a:hover:before {
-    visibility: visible;
-    transform: scalex(1);
-  }
+  visibility: visible;
+  transform: scalex(1);
+}
 
 /* Sheet for index.html*/
 
 #home {
-    padding-top: 10vh;
-    text-align: center;
-    color: black;
-}
-
-#home h1 {
-    font-size: 3em;
-    margin-bottom: 3vh;
-}
-
-#home h2 {
-    font-size: 2em;
-    margin-bottom: 3vh;
+  padding-top: 10vh;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  text-align: center;
+  color: black;
 }
 
 #home p {
-    font-size: 1.5em;
-    margin-bottom: 3vh;
-    font-weight: 600;
-}
-
-#home a {
-    color: black;
-}
-
-#home a:hover {
-    color: blue;
+  font-size: 1.5em;
+  margin-bottom: 3vh;
 }
 
 /* portfolio.html */
@@ -270,9 +252,6 @@ nav a:hover:before {
   header h1 {
     font-size: 4em;
   }
-  header p {
-    font-size: 2em;
-  }
   #circle-art {
     width: 35vw;
     height: 35vw;
@@ -280,12 +259,6 @@ nav a:hover:before {
   }
   nav {
     justify-content: space-around;
-  }
-  #home h1 {
-    font-size: 3.5em;
-  }
-  #home h2 {
-    font-size: 3.5em;
   }
   #home p {
     font-size: 3.5em;  
