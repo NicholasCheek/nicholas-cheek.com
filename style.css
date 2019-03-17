@@ -10,7 +10,7 @@ html, body {
 
 header {
   height: 44vh;
-  background-color: indigo;
+  background-color: #4B0082;
   color: white;
   text-align: center;
   padding-top: 5vh;
@@ -82,7 +82,7 @@ nav {
   justify-content: flex-end;
   align-items: center;
   height: 6vh;
-  background-color: indigo;
+  background-color: #4B0082;
   color: white;
 }
 
