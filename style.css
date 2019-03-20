@@ -157,6 +157,7 @@ nav a:hover:before {
 
 .hover-box {
   height: 275px;
+  font-size: 1em;
 }
 
 .hover-box span {
