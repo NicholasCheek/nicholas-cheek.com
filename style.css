@@ -130,32 +130,143 @@ nav a:hover:before {
 }
 
 /* portfolio.html */
+#portfolio {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
 #portfolio h1 {
-    text-align: center;
-    margin-top: 5vh;
     font-size: 3em;
+    padding: 5vh;
+    width: 100vw;
 }
 
 .tile {
-    display: inline-block;
-    width: 300px;
-    height: 170px;
-    overflow: hidden;
-    margin: 5vh 2.5vw;
-    text-align: center;
+    border: 1px solid black;
+    width: 600px;
+    height: 275px;
+    margin: 5vh;
+    padding: 50px;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    box-shadow: 5px 5px 5px #303030;
+}
+
+.hover-box {
+  height: 275px;
+}
+
+.hover-box span {
+    visibility: hidden;
+}
+
+.hover-box:hover span {
+    visibility: visible;
+}
+
+.hover-box a {
+    background-color: #4B0082;
+    color: white;
     text-decoration: none;
-    color: black;
-    border: 2px solid black;
-    border-radius: 10px;
-    font-weight: 700;
+    padding: 15px;
+    display: block;
+    width: 100px;
+    margin: 15px auto;
 }
 
-.tile-pic {
-    width: 300px;
-    height: auto;
+#roman {
+    background: url('https://farm5.staticflickr.com/4836/47338424672_0854d16bbc_o.jpg');
+    background-size: cover;
 }
 
+#roman:hover {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9)
+  ), url('https://farm5.staticflickr.com/4836/47338424672_0854d16bbc_o.jpg');
+  background-size: cover;
+}
+
+#palindrome {
+    background: url('https://farm5.staticflickr.com/4811/40425330603_631f592d18_o.jpg');
+    background-size: cover;
+}
+
+#palindrome:hover {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9)
+  ), url('https://farm5.staticflickr.com/4811/40425330603_631f592d18_o.jpg');
+  background-size: cover;
+}
+
+#napalm {
+    background: url('https://c2.staticflickr.com/8/7841/46632705122_a1799a8945_b.jpg');
+    background-size: cover;
+}
+
+#napalm:hover {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9)
+  ), url('https://c2.staticflickr.com/8/7841/46632705122_a1799a8945_b.jpg');
+  background-size: cover;
+}
+
+#tech {
+    background: url('https://c2.staticflickr.com/8/7848/46632706902_000fd515c3_b.jpg');
+    background-size: cover;
+}
+
+#tech:hover {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9)
+  ), url('https://c2.staticflickr.com/8/7848/46632706902_000fd515c3_b.jpg');
+  background-size: cover;
+}
+
+#landing {
+    background: url('https://c2.staticflickr.com/8/7914/46632705712_59112abd0f_o.jpg');
+    background-size: cover;
+}
+
+#landing:hover {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9)
+  ), url('https://c2.staticflickr.com/8/7914/46632705712_59112abd0f_o.jpg');
+  background-size: cover;
+}
+
+#survey {
+    background: url('https://c2.staticflickr.com/8/7804/46632706262_8640aa3af3_o.jpg');
+    background-size: cover;
+}
+
+#survey:hover {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9)
+  ), url('https://c2.staticflickr.com/8/7804/46632706262_8640aa3af3_o.jpg');
+  background-size: cover;
+}
+
+#tribute {
+    background: url('https://c1.staticflickr.com/5/4821/46632707412_603ec5a665_o.jpg');
+    background-size: cover;
+}
+
+#tribute:hover {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9)
+  ), url('https://c1.staticflickr.com/5/4821/46632707412_603ec5a665_o.jpg');
+  background-size: cover;
+}
 /* contact.html */
 
 #contact {
