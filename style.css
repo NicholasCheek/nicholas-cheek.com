@@ -353,6 +353,17 @@ nav a:hover:before {
     font-weight: bold;
   }
 
+  #hackerrank {
+    background-color: #00B759;
+    transition: all is ease;
+  }
+
+  #hackerrank:hover {
+    background-color: white;
+    color: #00B759;
+    font-weight: bold;
+  }
+
 /* for mobile */
 
 @media (max-width: 1000px) {
