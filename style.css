@@ -355,7 +355,7 @@ nav a:hover:before {
 
   #hackerrank {
     background-color: #00B759;
-    transition: all is ease;
+    transition: all 1s ease;
   }
 
   #hackerrank:hover {
