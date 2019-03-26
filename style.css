@@ -9,16 +9,15 @@ html, body {
 }
 
 header {
-  height: 44vh;
   background-color: #4B0082;
   color: white;
   text-align: center;
-  padding-top: 5vh;
+  padding-top: 100px;
   text-shadow: 0 0 10px black;
 }
 
 header h1 {
-  padding-top: 3vh;
+  padding: 50px;
   font-size: 2.5em;
   font-family: 'Ubuntu', sans-serif;
 }
@@ -35,9 +34,9 @@ header h1 {
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
   background: transparent;
-  border: 5px solid white;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent; 
+  border: solid white;
+  border-top: solid transparent;
+  border-bottom: solid transparent; 
   border-radius: 50%;
   text-shadow: 0 0 10px black;
 }
@@ -81,7 +80,6 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 6vh;
   background-color: #4B0082;
   color: white;
 }
@@ -92,7 +90,8 @@ nav a {
   text-decoration: none;
   font-size: 1.15em;
   float: right;
-  margin-right: 2vw;
+  margin-right: 15px;
+  padding: 7px;
   text-shadow: 0 0 10px black;
 }
   
