@@ -387,6 +387,7 @@ nav a:hover:before {
   }
   nav a {
     font-size: 3em;
+    padding: 15px;
   }
   #home {
     padding-left: 10vw;
