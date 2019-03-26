@@ -374,8 +374,14 @@ nav a:hover:before {
     height: 35vw;
     left: 32.5vw;
   }
+  .circle {
+    border: 10px solid white;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
   nav {
     justify-content: space-around;
+    font-size: 2em;
   }
   #home p {
     font-size: 3.5em;  
