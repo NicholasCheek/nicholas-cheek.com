@@ -381,13 +381,16 @@ nav a:hover:before {
   }
   nav {
     justify-content: space-around;
-    font-size: 2em;
   }
   #home p {
     font-size: 3.5em;  
   }
   nav a {
-    font-size: 2em;
+    font-size: 3em;
+  }
+  #home {
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
   #portfolio h1 {
     font-size: 4em
